@@ -199,4 +199,4 @@ let users = [
 
 const result5 = users.sort((a, b) => a.age - b.age);
 let result6 = Math.abs(result5[0].age - result5[users.length - 1].age);
-console.log(result6);
+// console.log(result6);

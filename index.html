@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="holiday count down calculator">
+    <link rel="stylesheet" href="./style.css">
+    <title>Countdown Clock</title>
 </head>
+<style>
+    body{
+    text-align: center;
+    background: #fff;
+    font-family: sans-serif, arial;
+    font-weight: bold;
+}
+
+h1{
+    color: #396;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 135px 0px 20px;
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 55px;
+}
+
+#clockdiv > div{
+    padding: 50px;
+    border-radius: 7px;
+    background: #1F5A56;
+    display: inline-block;
+    
+}
+
+#clockdiv div > span{
+    padding: 65px;
+    border-radius: 3px;
+    background: #000;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 25px;
+}
+</style>
 <body>
-    <script src="./app.js"></script>
+    <h1>Countdown Clock</h1>
+    <div id="clockdiv">
+        <div>
+            <span class="days"></span>
+            <div class="smalltext">Days</div>
+        </div>
+        <div>
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+        </div>
+        <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
